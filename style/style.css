@@ -1,0 +1,151 @@
+body{
+    background-color:darkolivegreen;
+}
+
+.header, .nav, .footWrap{
+    margin: 10px auto;
+    background-color: olive;
+    border: 1px solid black;
+    border-radius: 13px;
+    box-shadow: 2px 1px 4px black; 
+}
+
+.header{
+    padding: 15px;
+    overflow: auto;
+}
+
+.header, footWrap{
+    height: 420px;
+}
+
+.addBlock{
+    text-align: center;
+    display: none;
+}
+
+#checkTable, #checkList{
+    font-weight: bold;
+}
+
+.addTable{
+    margin: 15px;
+}
+
+.countTr, .countTd, .cellWidth, .cellHeight{
+    margin: 3px 10px;
+    border-radius: 5px;
+}
+
+.borderWidth{
+    margin: 3px 11px;
+    border-radius: 5px;
+}
+
+.stWidthBorber{
+    margin-right: 32px;
+}
+
+.stBorderType{
+    margin: 12px;
+    font-weight: bold;
+}
+
+.borderColor{
+    margin: 3px 17px;
+    border-radius: 5px;
+}
+
+.stBorderColor{
+    margin-right: 30px;
+}
+
+.stItem{
+    margin: 3px 10px;
+}
+
+.countEl{
+    border-radius: 5px;
+}
+
+.stMark{
+    font-weight: bold;
+}
+
+.navFormButt, .styleButt{
+    text-align: center;
+}
+
+.colorStyleBut{
+    margin: 10px 2px;
+    padding: 5px 20px;
+    font-size: 25px;
+    background-color: yellowgreen;
+    border: 1px solid black;
+    border-radius: 13px;  
+    box-shadow: 2px 1px 4px black;
+}
+
+.colorStyleBut:hover {
+    background: yellow;
+    color:darkblue;
+    transition: 1s;
+}
+
+.footWrap{
+    padding: 20px;
+}
+
+.textArea, .wrapForm{
+    display: none;
+}
+
+.tArea{
+    width: 800px;
+    padding: 10px;
+    resize: none;
+    border-radius: 13px;
+}
+
+.rdButt, .fontFamily, .chBox{
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 25px;
+}
+
+.styleButt{
+    margin-bottom: 25px;
+}
+
+.colorBox{
+    width: 208px;
+    height: 208px;
+    border: 1px solid black;
+    margin: 10px auto;
+    display: none;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    float: left;
+    margin: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
