@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="style/style.css"> 
+</head>
+<body>
+    <header class="header"> 
+       <!----------- Головне текстове поле ------------>
+       
+        <article class="artText">
+            <p class="parText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste velit numquam recusandae placeat ullam quasi fuga adipisci optio, cupiditate voluptas quibusdam assumenda ipsa temporibus eligendi repellat esse porro voluptatem excepturi explicabo dolorem reprehenderit molestias laudantium. Quibusdam blanditiis sequi qui corporis aperiam quae illum autem, a? Corporis eaque omnis voluptate dolore sequi excepturi voluptas dicta, accusantium deserunt iure. Tempore nulla atque consequuntur dolorum facere animi consectetur iusto, quas ut dicta officia quisquam inventore excepturi velit sit corrupti illo eum iste at quae nobis natus debitis! Dolore quis eum veritatis neque ducimus amet ratione soluta expedita natus enim, nostrum dolorem? Nesciunt, harum ipsa. Incidunt suscipit minus ducimus cum, reprehenderit temporibus voluptas laboriosam quisquam voluptates corporis quod magnam repellendus at. Fuga rerum neque, error in maxime architecto explicabo. Perspiciatis fugiat aliquam accusamus natus debitis, repellat nostrum impedit? Optio necessitatibus laudantium debitis animi, minus deleniti placeat sunt. Non nesciunt culpa eius, ad quisquam ullam.</p>
+        </article>
+        
+        <!------------ Обрати таблицю або список ------------>
+        
+        <div class="addBlock">
+            <h1>Choose what to add:</h1>
+                
+            <form action="#" name="chooseRadButt">
+                <label><input type="radio"  name="rdButtCh" value="table"><span id="checkTable">Table</span></label>
+                <label><input type="radio" name="rdButtCh" value="item"><span id="checkList">List</span></label>
+            </form>
+            
+        <!------------ Таблиця ------------>
+            
+            <div class="addTable">
+                <div>Input count of row: <input type="text" class="countTr"></div>
+                <div>Input count of cell: <input type="text" class="countTd"></div>
+                <h3><span class="tabStyle">Table style:</span></h3>
+                <div><span class="stWidhtTable">Input width of cell:</span><input type="text" class="cellWidth"></div>
+                <div><span class="stHeightTable">Input height of cell:</span><input type="text" class="cellHeight"></div>
+                <div><span class="stWidthBorber">Border Width:</span><input type="text" class="borderWidth"></div>
+                <span class="stBorderType">Border type:</span><select class="borderStyle">
+                    <option>groove</option>
+                    <option>solid</option>
+                    <option>dashed</option>
+                </select>
+                <div><span class="stBorderColor">Border color:</span><input type="text" placeholder="Enter color" class="borderColor"></div>
+                <div><input type="button" value="Create Table" id="create" class="colorStyleBut"></div>
+            </div>
+               
+        <!------------ Список ------------>       
+                
+            <div class="addItem">
+                <form action="#" name="rBtnItem">
+                    <p><span class="stItem">Enter count elements item:</span>
+                           <input type="text" class="countEl"> </p> <span class="stMark">Type of mark:</span>
+                    <select class="typeItem">
+                        <option value="circle">circle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select>
+                    <p>
+                        <input type="button"value="Create Iteam" class="colorStyleBut" name="push"id="createItem"> </p>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+       <!------------ Основне меню ------------>
+       
+        <div class="nav">
+            <form action="#" name="navFormButt" class="navFormButt">
+                <input type="button" value="Edit" name="edit" class="colorStyleBut">
+                <input type="button" value="Style" name="styleB" class="colorStyleBut">
+            </form>
+        </div>
+    
+       <!------------ Текстове поле вводу ------------>
+       
+        <footer class="footWrap">
+           
+            <div class="textArea">
+                <form action="#" name="textAreaForm">
+                  <center><textarea name="tArea" class="tArea" cols="40" rows="15"></textarea></center>
+                </form>
+                
+        <!------------ Кнопки текстового поля ------------> 
+                
+                <div class="buttTextArea">
+                    <form action="#" name="buttTextAreaForm">
+                        <input type="button" value="Save" name="save" class="colorStyleBut" id="save">
+                        <input type="button" value="Add" name="addButt" class="colorStyleBut">
+                    </form> 
+                </div>  
+            </div>
+            
+        <!------------ Зміна розміру тексту ------------>
+            
+            <div class="wrapForm">   
+                  
+                <div class="rdButt">
+                    <form action="#" name="rdButtForm" class="rdButtForm">
+                        Text size: <label><input type="radio" value="12px" name="rdButton">12pt</label>
+                        <label><input type="radio" value="14px" name="rdButton">14pt</label>
+                        <label><input type="radio" value="16px" name="rdButton">16pt</label>
+                        <label><input type="radio" value="18px" name="rdButton">18pt</label>
+                        <label><input type="radio" value="20px" name="rdButton">20pt</label>   
+                    </form>
+                </div>
+                
+        <!------------ Вибір стилю шрифту ------------>
+               
+                <div class="fontFamily">
+                    <form action="#" name="fontFamilyForm">
+                        Font Family: <select>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Arial">Arial</option> 
+                            <option value="Verdana">Verdana</option> 
+                        </select>
+                    </form>
+                </div>
+                
+        <!------------ Зміна кольору шрифту та фону ------------>
+               
+                <div class="styleButt">
+                    <form action="#" name="styleButtForm">
+                        <input type="button" value="Color" name="colorBut" class="colorStyleBut" id="color">
+                        <input type="button" value="BgColor" name="bgColor" class="colorStyleBut" id="bgColor">
+                    </form>   
+                </div>
+        
+        <!------------ Вибір кольору ------------>
+                                
+                <div class="colorBox">
+                    <div class="box" style="background: red"></div>
+                    <div class="box" style="background: blue"></div>
+                    <div class="box" style="background: purple"></div>
+                    <div class="box" style="background: yellow"></div>
+                </div>
+
+        <!------------ Зміна стилю шрифту ------------>
+               
+                <div class="chBox">
+                    <form action="#" name="chBoxForm">
+                        <label><input type="checkbox" value="Bold" name="chBold"> Bold text</label>
+                        <label><input type="checkbox" value="Italic" name="chItalic"> Italic text</label>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>
